@@ -1927,7 +1927,10 @@ ptrs_i_AST = First(
 # ================= outermost AST of PTRS ==================== #
 # ============================================================ #
 
-ptrs_o_AST = ptrs_AST
+ptrs_o_AST = First(
+               Solve(PTRS_AST_OutermostToInnermost : ptrs_i_AST),
+               ptrs_AST
+             )
 
 # ============================================================ #
 # ===================== AST of PQTRS ========================= #

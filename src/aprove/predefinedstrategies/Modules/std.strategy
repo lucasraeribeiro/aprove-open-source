@@ -1792,6 +1792,7 @@ declare PTRS_ToInnermost = aprove.verification.probabilistic.Termination.PTRSPro
 
 
 #PTRS Processors (AST)
+declare PTRS_AST_OutermostToInnermost = aprove.verification.probabilistic.Termination.PTRSProblem.AST.Processors.PTRS_AST_OutermostToInnermostProcessor
 declare PTRS_AST_toSAST = aprove.verification.probabilistic.Termination.PTRSProblem.AST.Processors.PTRS_AST_ToSASTProcessor
 declare PTRS_AST_DirectPOLO = aprove.verification.probabilistic.Termination.PTRSProblem.AST.Processors.PTRS_AST_DirectPoloProcessor
 declare PTRS_AST_ExpectedDirectPOLO = aprove.verification.probabilistic.Termination.PTRSProblem.AST.Processors.PTRS_AST_ExpectedDirectPoloProcessor
