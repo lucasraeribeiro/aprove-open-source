@@ -1929,6 +1929,8 @@ ptrs_i_AST = First(
 
 ptrs_o_AST = First(
                Solve(PTRS_AST_OutermostToInnermost : ptrs_i_AST),
+               Solve(PTRS_AST_OutermostContext[Transformation = CONTEXT_T3] : ptrs_AST),
+               Solve(PTRS_AST_OutermostContext[Transformation = CONTEXT_T2] : ptrs_AST),
                ptrs_AST
              )
 
